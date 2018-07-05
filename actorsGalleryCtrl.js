@@ -55,6 +55,9 @@ app.controller('actorsCtrl', function ($scope, $http) {
 
     };
 
+    $scope.sorts = [{label: 'Alphabetically', name: 'name'},{label: 'Birthday', name: 'age'}];
+
+
     $scope.actorSelected = null;
     $scope.setSelected = function (actorSelected) {
         $scope.actorSelected = actorSelected;
