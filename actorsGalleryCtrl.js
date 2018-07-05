@@ -9,7 +9,7 @@ app.controller('actorsCtrl', function ($scope, $http) {
 
     
   $scope.actors = [];
-  $http.get('actors.json').then(function(response) {
+  $http.get('actors.JSON').then(function(response) {
     response.data.forEach(function(plainObj) {
       var actor = new Actor (plainObj.name, plainObj.age, plainObj.imgURL, plainObj.url);
       $scope.actors.push(actor);
